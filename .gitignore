@@ -31,6 +31,7 @@ coverage/
 # TypeScript
 *.tsbuildinfo
 .tscache/
+next-env.d.ts
 
 # Local cache
 .cache/

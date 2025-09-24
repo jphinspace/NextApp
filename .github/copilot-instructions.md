@@ -44,7 +44,7 @@ NextApp is a Next.js 15.5.4 web application that displays interactive charts usi
    - Test adding new data point: enter label (e.g., "Jul") and value (e.g., "55")
    - Click "Add" button and verify:
      - Success toast appears temporarily: "Point created"
-     - Chart updates to include new data point  
+     - Chart updates to include new data point
      - Form fields clear after successful submission
      - Server logs show: POST request, database insert, and data refetch
 
