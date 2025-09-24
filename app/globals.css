@@ -1,0 +1,66 @@
+:root {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --muted: #64748b;
+  --accent: #3b82f6;
+  --text: #0f172a;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  min-height: 100vh;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.card {
+  background: var(--surface);
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(2,6,23,0.06);
+  padding: 1rem;
+}
+
+.title { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem }
+.muted { color: var(--muted); margin-bottom: 1rem }
+.chart-wrap { height: 20rem }
+
+/* spinner overlay inside chart area while revalidating */
+.chart-wrap { position: relative }
+.chart-spinner {
+  position: absolute;
+  inset: 0; /* cover container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* block interactions while revalidating */
+  pointer-events: auto;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(2px);
+}
+.spinner {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 4px solid rgba(15,23,42,0.12);
+  border-top-color: var(--accent);
+  animation: spin 900ms linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner { animation: none }
+}
+
+@keyframes spin { to { transform: rotate(360deg) } }

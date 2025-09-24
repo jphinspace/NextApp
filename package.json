@@ -1,0 +1,45 @@
+{
+  "name": "nextapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "typecheck": "tsc --noEmit",
+    "test": "jest --verbose"
+  },
+  "dependencies": {
+    "chart.js": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-chartjs-2": "latest",
+    "react-dom": "latest",
+    "swr": "^2.3.6"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.8.0",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/jest": "^30.0.0",
+    "@types/node": "latest",
+    "@types/pg": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "^19.1.9",
+    "@types/supertest": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "eslint-config-prettier": "latest",
+    "eslint-plugin-react": "latest",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "latest",
+    "jest-environment-jsdom": "^30.1.2",
+    "pg": "latest",
+    "prettier": "latest",
+    "supertest": "latest",
+    "ts-jest": "^29.4.4",
+    "typescript": "latest"
+  }
+}
