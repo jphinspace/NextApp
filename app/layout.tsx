@@ -1,11 +1,11 @@
-import './globals.css'
-import { ReactNode } from 'react'
-import { ToastProvider } from '../components/Toast'
+import './globals.css';
+import { ReactNode } from 'react';
+import { ToastProvider } from '../components/Toast';
 
 export const metadata = {
   title: 'NextApp — Chart Demo',
-  description: 'A simple Next.js app showing a chart from in-memory data.'
-}
+  description: 'A simple Next.js app showing a chart from in-memory data.',
+};
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
@@ -21,5 +21,5 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <div id="toast-root" />
       </body>
     </html>
-  )
+  );
 }
