@@ -71,7 +71,7 @@ describe('server/db', () => {
 
     it('getAllSamplePoints handles ECONNREFUSED error', async () => {
       const dbError = new Error('connection refused')
-      dbError.code = 'ECONNREFUSED'
+      ;(dbError as any).code = 'ECONNREFUSED'
       const mQuery = jest.fn().mockRejectedValue(dbError)
       const mockPool = { query: mQuery }
       const db = require('../server/db')
@@ -102,7 +102,7 @@ describe('server/db', () => {
 
     it('insertSamplePoint handles ECONNREFUSED error', async () => {
       const dbError = new Error('connection refused')
-      dbError.code = 'ECONNREFUSED'
+      ;(dbError as any).code = 'ECONNREFUSED'
       const mQuery = jest.fn().mockRejectedValue(dbError)
       const mockPool = { query: mQuery }
       const db = require('../server/db')
@@ -133,7 +133,7 @@ describe('server/db', () => {
 
     it('getSamplePointsPaginated handles ECONNREFUSED error', async () => {
       const dbError = new Error('connection refused')
-      dbError.code = 'ECONNREFUSED'
+      ;(dbError as any).code = 'ECONNREFUSED'
       const mQuery = jest.fn().mockRejectedValue(dbError)
       const mockPool = { query: mQuery }
       const db = require('../server/db')
