@@ -39,6 +39,7 @@ Quick start
    npm run dev
 
 3. For production mode with Postgres:
+
    ```env
    # .env.local
    NODE_ENV=production

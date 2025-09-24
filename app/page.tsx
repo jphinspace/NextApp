@@ -1,4 +1,4 @@
-import ChartDemo from '../components/ChartDemo'
+import ChartDemo from '../components/ChartDemo';
 
 export default function Page() {
   return (
@@ -7,5 +7,5 @@ export default function Page() {
       <p className="muted">This page reads from an in-memory store and displays a chart.</p>
       <ChartDemo />
     </section>
-  )
+  );
 }
